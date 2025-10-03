@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oficina de Pintura — [Nome do Pintor]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">
+  <img src="logo.png" alt="logo de André Ramos Lima">
+</div>
+        <div>
+          <h1>André Ramos Lima</h1>
+          <p class="muted">Pintura · Restauração · Pequenos reparos</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+        <a class="cta" href="#contato">Orçamento</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <div class="badges">
+            <div class="badge">Atendimento em domicílio</div>
+            <div class="badge">Orçamento grátis</div>
+          </div>
+          <h2>Serviços de pintura com qualidade e cuidado</h2>
+          <p>Trabalho com pintura e retoques em móveis. Mais de 7 anos de experiência — acabamento profissional e garantia de serviço.</p>
+
+          <div class="services">
+            <div class="service">Pintura completa</div>
+            <div class="service">Retoques</div>
+          </div>
+
+          <div style="margin-top:16px;display:flex;gap:10px;align-items:center">
+            <a class="btn" href="#portfolio">Ver portfólio</a>
+            <a class="btn btn-light" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+
+        <aside class="contact" id="contato">
+          <div class="phone">📞 (31) 9128-0185</div>
+          <small class="muted">Atendimento via WhatsApp e ligação. Horário: 08:00–18:00</small>
+
+          <hr style="margin:12px 0;border:none;border-top:1px solid #eef4ff" />
+
+          <strong>Endereço</strong>
+          <div class="small muted">Atendimento em Belo Horizonte e região. Atendimento em domicílio disponível.</div>
+
+          <hr style="margin:12px 0;border:none;border-top:1px solid #eef4ff" />
+
+          <strong>Peça um orçamento</strong>
+          <form action="#" onsubmit="alert('Envio de contato simulado. Substitua action por endpoint real.');return false;">
+            <a href="https://wa.me/553191280185" target="_blank">
+  <button type="button">Entre em contato</button>
+</a>
+
+          </form>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="columns">
+          <div>
+            <h3 id="servicos">Serviços e valores</h3>
+            <p class="muted">Abaixo estão serviços comuns — para um orçamento exato, envie fotos ou agende uma visita.</p>
+            <ul>
+              <li><strong>Retoque local</strong> — a partir de R$ 80</li>
+              <li><strong>Pintura parcial</strong> — a partir de R$ 450</li>
+              <li><strong>Pintura completa</strong> — orçamento sob medida</li>
+            </ul>
+
+            <h3 style="margin-top:18px">Depoimentos</h3>
+            <div class="testi">
+              <strong>Priscila, BH</strong>
+              <p class="muted small">Serviço excelente, acabamento impecável e atendeu no prazo combinado.</p>
+            </div>
+            <div class="testi">
+              <strong>Lucas, BH</strong>
+              <p class="muted small">Excelente profissional.
+            </div>
+            <div class="testi">
+              <strong>Filipe, Sabará</strong>
+              <p class="muted small">Acabamento impecável.</p>
+            </div>
+            <div class="testi">
+              <strong>Tiago, BH</strong>
+              <p class="muted small">Amei o serviço</p>
+            </div>
+          </div>
+
+          <aside>
+            <div class="card">
+              <h4>Por que escolher André Ramos?</h4>
+              <p class="muted small">Atendimento personalizado, uso de materiais de qualidade e garantia de serviço. Trabalho com as melhores técnicas e preparo das superfícies para garantir durabilidade.</p>
+              <div style="margin-top:12px">
+                <a class="btn" href="#contato">Pedir orçamento</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+  <h2>Portfólio</h2>
+  <p>Alguns trabalhos realizados</p>
+  
+  <div class="gallery">
+    <img src="Trabalho 1.jpg" alt="Trabalho 1">
+    <img src="Trabalho 2.jpg" alt="Trabalho 2">
+    <img src="Trabalho 3.jpg" alt="Trabalho 3">
+    <img src="Trabalho 4.jpg" alt="Trabalho 4">
+    <img src="Trabalho 5.jpg" alt="Trabalho 5">
+  </div>
+</section>
+
+
+    </main>
+
+    <footer>
+        <span id="year"></span> André Ramos Lima — Pintura profissional. <span class="muted">Telefone/WhatsApp: (31) 99128-0185</span>
+      <p>© <span id="year"></span>Desenvilvido por Filipe Ramos Lima. <span class="muted">Telefone/WhatsApp: (31) 99466-0607</span></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

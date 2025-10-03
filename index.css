@@ -1,0 +1,120 @@
+:root{
+  --bg:#f7f7f9;
+  --card:#ffffff;
+  --accent:#1f6feb;
+  --accent-dark:#1553b3;
+  --muted:#6b7280;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+  --radius:12px;
+  --max-width:1100px;
+  --gap:18px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, 'Helvetica Neue', Arial;
+  background:linear-gradient(#e4e4e4);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+.container{max-width:var(--max-width);margin:36px auto;padding:18px}
+
+/* Header */
+header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo img {
+  width: 60px;   /* tamanho da foto */
+  height: 60px;  /* deixa quadrado para arredondar */
+  border-radius: 50%; /* deixa a foto redonda */
+  object-fit: cover; /* recorta a imagem para caber certinho */
+}
+.brand h1{margin:0;font-size:20px}
+.brand p{margin:0;color:var(--muted);font-size:14px}
+nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-weight:600}
+.cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 6px 16px rgba(31,111,235,0.16)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:24px;margin-top:20px;align-items:center}
+.hero-card{background:var(--card);padding:24px;border-radius:16px;box-shadow:var(--shadow)}
+.hero h2{margin:0 0 8px;font-size:26px}
+.hero p{margin:0 0 16px;color:var(--muted)}
+.badges{display:flex;gap:8px;margin-bottom:10px}
+.badge{background:#eef6ff;color:var(--accent);padding:8px 10px;border-radius:999px;font-weight:600;font-size:13px}
+.services{display:flex;gap:12px;flex-wrap:wrap}
+.service{padding:10px 12px;border-radius:10px;background:#fbfdff;border:1px solid #edf2ff;color:#0b3a66;font-weight:600}
+
+/* Contact box */
+.contact{background:linear-gradient(180deg,#ffffff,#f6fbff);padding:20px;border-radius:14px;border:1px solid #e6efff}
+.contact .phone{display:flex;align-items:center;gap:10px;font-weight:700}
+.contact small{display:block;color:var(--muted);margin-top:6px}
+
+/* Portfolio */
+.section{margin-top:28px}
+.section h3{margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:var(--gap)}
+.card{background:var(--card);padding:12px;border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
+.thumb{height:150px;background:#e9eef6;border-radius:8px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.card h4{margin:0;font-size:16px}
+.card p{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+/* About + Testimonials */
+.columns{display:grid;grid-template-columns:1fr 320px;gap:18px}
+.testi{background:#ffffff;border-radius:12px;padding:14px;border:1px solid #000000}
+
+/* Footer */
+footer{margin-top:36px;padding:18px 0;color:var(--muted);text-align:center;font-size:14px}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .columns{grid-template-columns:1fr}
+  nav{display:none}
+}
+
+/* Small helpers */
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.btn{display:inline-block;padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn-light{background:#f3f6fb;border:1px solid #e6eefc;color:var(--accent)}
+.center{text-align:center}
+
+/* contact form simple */
+form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-top:8px}
+form button{margin-top:10px;background:var(--accent);color:white;padding:10px 12px;border-radius:10px;border:none;font-weight:700}
+
+.portfolio {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.portfolio p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
